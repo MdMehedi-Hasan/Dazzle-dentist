@@ -1,0 +1,17 @@
+.w-35{
+    width:35%
+}
+.register-linked{
+    text-align: center;
+}
+.register-linked a{
+text-decoration: none;
+}
+.or div{
+width:50%;
+height: 2px;
+background-color: black;
+}
+.btn-px{
+    padding: 0px 10px;
+}
