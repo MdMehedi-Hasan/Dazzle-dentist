@@ -1,8 +1,9 @@
 import React from "react";
-import { Card, CardGroup, Carousel } from "react-bootstrap";
+import { Button, Card, CardGroup, Carousel } from "react-bootstrap";
 import imageOne from "../../../images/demo-8.jpg";
 import imageTwo from "../../../images/demo-9.jpg";
 import imageThree from "../../../images/demo-10.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -61,7 +62,7 @@ const Home = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+      <Button as={Link} to="/checkout">Book appointment</Button>
     </Card.Footer>
   </Card>
   <Card>
@@ -73,9 +74,7 @@ const Home = () => {
         content.{' '}
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
+    <Button as={Link} to="/checkout">Book appointment</Button>
   </Card>
   <Card>
     <Card.Img variant="top" src={imageThree} />
@@ -88,7 +87,7 @@ const Home = () => {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+    <Button as={Link} to="/checkout">Book appointment</Button>
     </Card.Footer>
   </Card>
 </CardGroup>
