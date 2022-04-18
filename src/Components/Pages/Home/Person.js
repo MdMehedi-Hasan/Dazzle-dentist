@@ -7,10 +7,10 @@ const Person = () => {
       <div>
           <h1 className="w-25 mx-auto text-center mt-5 mb-5 text-info">About me <hr /></h1>
       <div className="d-md-flex text-center align-items-center justify-content-around mb-5">
-        <div>
-          <img className="w-75 me-md-3" src={image} alt="" />
+        <div className="cstm-width">
+          <img className="me-md-3" src={image} alt="" />
         </div>
-        <div className="w-sm-50">
+        <div className="text-lg-start">
           <h1> Md. Joynab Binte Jahas</h1>
           <p >
             Hi, i am Joynab. I am a professional dentist &amp; consultant at{" "}
