@@ -1,10 +1,7 @@
 import React from "react";
-import { Card, Carousel } from "react-bootstrap";
 import banner_1 from "../../../images/Banner/banner-1.png";
 import banner_2 from "../../../images/Banner/banner-2.png";
 import banner_3 from "../../../images/Banner/banner-3.png";
-import { Button, CardGroup } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import service_1 from "../../../images/services/service-1.png";
 import service_2 from "../../../images/services/service-2.png";
 import service_3 from "../../../images/services/service-3.png";
@@ -15,6 +12,9 @@ import "./Home.css";
 import Person from "./Person";
 import Certification from "./Certification";
 import Location from "./Location";
+import { Button, CardGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Card, Carousel } from "react-bootstrap";
 
 const Home = () => {
   return (
@@ -28,8 +28,8 @@ const Home = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Tooth Extractions</h3>
+            <p>Don't worry about the extraction. Our tooth extraction tool is safe &amp; less painful.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -41,8 +41,8 @@ const Home = () => {
           />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Cosmetic dentistry</h3>
+            <p >You can easily transplant teeth in your gum. Our cosmetic surgery is less costly and better than others.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -54,18 +54,18 @@ const Home = () => {
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Root Canal Therapy</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Get Root Canal Therapy in a very affordable price. And we also provide 30 days of observation.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
       {/* ====================================== */}
       <div className="container mx-auto row mt-5">
-        <div className="col-md-3 bg-warning">
-          <h1>Consultancy</h1>
-          <h5> Care solution</h5>
+        <div className="col-md-3 bg-warning p-4">
+        <span className="fs-3 fw-bold">Consultancy</span>
+          <h5> (Care solution)</h5>
           <ul>
             <li>Get The Quality Deserve</li>
             <li>Management Personal Assistance</li>
@@ -74,37 +74,37 @@ const Home = () => {
             <li>Assistance Care That You</li>
           </ul>
         </div>
-        <div className="col-md-3 bg-info">
-          <h1>Consultancy</h1>
-          <h5> Care solution</h5>
+        <div className="col-md-3 bg-info p-4">
+        <span className="fs-3 fw-bold">Day long service</span>
+          <h5>(Service hours)</h5>
           <ul>
-            <li>Get The Quality Deserve</li>
-            <li>Management Personal Assistance</li>
-            <li>Housekeeping Nutritional</li>
-            <li>Management Medication</li>
-            <li>Assistance Care That You</li>
+            <li>24 hour consultancy</li>
+            <p><hr /></p>
+            <li>Over phone support</li>
+            <p><hr /></p>
+            <li>9 am - 5pm @chamber</li>
           </ul>
         </div>
-        <div className="col-md-3 bg-warning">
-          <h1>Day long service</h1>
-          <h5> Defined by you</h5>
+        <div className="col-md-3 bg-warning p-3">
+          <span className="fs-3 fw-bold">Cosmetic-surgery</span>
+          <h5> (All types of surgery)</h5>
           <ul>
-            <li>Get The Quality Deserve</li>
-            <li>Management Personal Assistance</li>
-            <li>Housekeeping Nutritional</li>
-            <li>Management Medication</li>
-            <li>Assistance Care That You</li>
+            <li>All types of surgeries</li>
+            <li>Affordable price</li>
+            <li>2 months observation</li>
+            <li>Tele Medication</li>
+            <li>Assistance Care That You need</li>
           </ul>
         </div>
-        <div className="col-md-3 bg-info">
-          <h1>Consultancy</h1>
-          <h5> Care solution</h5>
+        <div className="col-md-3 bg-info p-4">
+        <span className="fs-3 fw-bold">Dental Implants</span>
+          <h5>(Teeth Whitening)</h5>
           <ul>
-            <li>Get The Quality Deserve</li>
-            <li>Management Personal Assistance</li>
-            <li>Housekeeping Nutritional</li>
-            <li>Management Medication</li>
-            <li>Assistance Care That You</li>
+            <li>Basic treatments available</li>
+            <p><hr /></p>
+            <li>Proper guidance on diet</li>
+            <p><hr /></p>
+            <li>Regular observation</li>
           </ul>
         </div>
       </div>
