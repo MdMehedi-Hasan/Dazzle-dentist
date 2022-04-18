@@ -4,41 +4,38 @@ import { Button, Form } from "react-bootstrap";
 import {
   useAuthState,
   useCreateUserWithEmailAndPassword,
-  useSendEmailVerification,
   useSignInWithFacebook,
   useSignInWithGithub,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
-import Toast from "../../Shared/Toast";
 import image from "../../../images/undraw_programming_re_kg9v.svg";
+import { toast, ToastContainer } from "react-toastify";
 
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  console.log(email, password);
-
   const [signInWithGoogle, googleuser] = useSignInWithGoogle(auth);
   const [signInWithFacebook, fbuser] = useSignInWithFacebook(auth);
   const [signInWithGithub, gituser] = useSignInWithGithub(auth);
   const [createUserWithEmailAndPassword] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
   const [user, loading] = useAuthState(auth);
-  const [sendEmailVerification, sending, error] = useSendEmailVerification(auth);
-  console.log(error)
   const navigate = useNavigate();
 
-  /* if (googleuser ||fbuser || gituser ||user) {
+  if (googleuser ||fbuser || gituser ||user) {
     navigate("/")
-  } */
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
+    toast('Verification mail sent')
     createUserWithEmailAndPassword(email, password);
   };
   return (
     <div className="d-flex justify-content-evenly align-items-center mt-5 mb-5">
+      <ToastContainer/>
       <div className="w-50">
         <img width={"100%"} height={"200px"} src={image} alt="" />
       </div>
@@ -74,10 +71,6 @@ const Register = () => {
             />
           </Form.Group>
           <Button
-            onClick={async () => {
-              await sendEmailVerification(user);
-              alert('sending')
-            }}
             className="w-100"
             variant="primary"
             type="submit"
