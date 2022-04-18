@@ -4,16 +4,16 @@
 
 ## Different functions
 
-*Extra service section
-*About me section
-*Extra two login buttons
-*Work of excelence section
-*Location section
+* Extra service section (@Home page)
+* About me section (@Home page)
+* Extra two login buttons (with authentication)
+* Work of excelence section (@Home page)
+* Location section (@Home page)
 
 ### Technologies used for this project
 
-*Extra service section
-*About me section
-*
-*
-*
+* React Bootstrap
+* Firebase
+* React
+* React firebase hooks
+* React tostify
