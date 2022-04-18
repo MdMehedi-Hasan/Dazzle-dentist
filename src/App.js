@@ -11,6 +11,7 @@ import Footer from "./Components/Shared/Footer";
 import Register from "./Components/Pages/Register/Register";
 import Checkout from "./Components/Pages/Checkout/Checkout";
 import RequireAuth from "./Components/RequireAuth";
+import Booking from "./Components/Pages/Checkout/Booking";
 
 function App() {
   return (
@@ -29,8 +30,10 @@ function App() {
               </RequireAuth>
             }
           ></Route>
+          <Route path="/booking" element={<Booking></Booking>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/register" element={<Register></Register>}></Route>
+          
         </Routes>
         <Footer></Footer>
       </div>

@@ -36,12 +36,12 @@ const Login = () => {
             <Form.Label>Password</Form.Label>
             <Form.Control type="password" placeholder="Password" required />
           </Form.Group>
-          <p>Forgot password?</p>
-          <Button className="w-100" variant="primary" type="submit">
+          <Link className="float-end mb-3 text-decoration-none" to="/login">Forgot password?</Link>
+          <Button className="w-100 mb-4" variant="primary" type="submit">
             Submit
           </Button>
           <p className="register-linked">
-            New to Dazzle Dentist? <Link to="/register">Sign Up</Link>{" "}
+            New to Dazzle Dentist? <Link to="/register">Sign Up</Link>
           </p>
           <div className="d-flex justify-content-center align-items-center or">
             <div></div>
