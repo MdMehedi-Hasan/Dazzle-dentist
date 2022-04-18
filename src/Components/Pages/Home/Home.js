@@ -117,8 +117,8 @@ const Home = () => {
         I always try to provide the best services to my client. <br /> I
         belive in giving quality service.
       </span>
-      <CardGroup className="mt-5 mb-5 m-5">
-        <Card className="m-2 border border-2 rounded">
+      <CardGroup className="mt-5 mb-lg-5 m-lg-5">
+        <Card className="mb-4 m-2 border border-2 rounded">
           <Card.Img className="rounded h-50" variant="top" src={service_1} />
           <Card.Body>
             <Card.Title>Implants - placement and restoration</Card.Title>
@@ -133,7 +133,7 @@ const Home = () => {
             Book appointment
           </Button>
         </Card>
-        <Card className="m-2 border border-2 rounded">
+        <Card className="mb-4 m-2 border border-2 rounded">
           <Card.Img className="rounded h-50" variant="top" src={service_2} />
           <Card.Body>
             <Card.Title>
@@ -150,7 +150,7 @@ const Home = () => {
             Book appointment
           </Button>
         </Card>
-        <Card className="m-2 border border-2 rounded">
+        <Card className="mb-4 m-2 border border-2 rounded">
           <Card.Img className="rounded h-50" variant="top" src={service_3} />
           <Card.Body>
             <Card.Title>Orthodontics</Card.Title>
@@ -166,8 +166,8 @@ const Home = () => {
           </Button>
         </Card>
       </CardGroup>
-      <CardGroup className="mt-5 mb-5 m-5">
-        <Card className="m-2 border border-2 rounded">
+      <CardGroup className="mt-lg-5 mb-5 m-lg-5">
+        <Card className="mb-4 m-2 border border-2 rounded">
           <Card.Img className="rounded h-50" variant="top" src={service_4} />
           <Card.Body>
             <Card.Title>Fillings, root canals, and extractions</Card.Title>
@@ -182,7 +182,7 @@ const Home = () => {
             Book appointment
           </Button>
         </Card>
-        <Card className="m-2 border border-2 rounded">
+        <Card className="mb-4 m-2 border border-2 rounded">
           <Card.Img className="rounded h-50" variant="top" src={service_5} />
           <Card.Body>
             <Card.Title>
@@ -199,7 +199,7 @@ const Home = () => {
             Book appointment
           </Button>
         </Card>
-        <Card className="m-2 border border-2 rounded">
+        <Card className="mb-4 m-2 border border-2 rounded">
           <Card.Img className="rounded h-50" variant="top" src={service_6} />
           <Card.Body>
             <Card.Title>
