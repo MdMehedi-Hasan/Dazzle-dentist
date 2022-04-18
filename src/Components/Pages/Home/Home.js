@@ -124,9 +124,7 @@ const Home = () => {
             <Card.Title>Implants - placement and restoration</Card.Title>
             <Card.Text className="fs-4">Fee: $300</Card.Text>
             <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
+            After you heal from your implant placement, you can revisit my chamber for an implant restoration. I will put you under anesthesia and connect the abutment to the implant. It can take about two weeks for your gums to heal before having your dental prosthetic attached.
             </Card.Text>
           </Card.Body>
           <Button variant="success" as={Link} to="/checkout">
@@ -141,9 +139,7 @@ const Home = () => {
             </Card.Title>
             <Card.Text className="fs-4">Fee: $800</Card.Text>
             <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
+            Examination of diagnostic X-rays (radiographs): Essential for detection of decay, tumors, cysts, and bone loss. X-rays also help determine tooth and root positions. Oral cancer screening: Check the face, neck, lips, tongue, throat, tissues, and gums for any signs of oral cancer..
             </Card.Text>
           </Card.Body>
           <Button variant="success" as={Link} to="/checkout">
@@ -156,9 +152,7 @@ const Home = () => {
             <Card.Title>Orthodontics</Card.Title>
             <Card.Text className="fs-4">Fee: $200</Card.Text>
             <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
+            Orthodontics is a branch of dentistry that treats malocclusion, a condition in which the teeth are not correctly positioned when the mouth is closed. This results in an improper bite. An orthodontist specializes in making the teeth straight..
             </Card.Text>
           </Card.Body>
           <Button variant="success" as={Link} to="/checkout">
@@ -173,9 +167,7 @@ const Home = () => {
             <Card.Title>Fillings, root canals, and extractions</Card.Title>
             <Card.Text className="fs-4">Fee: $500</Card.Text>
             <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
+            Root fillings fill the tube from the part of the tooth you can see to the end of your root underneath your gum. Extraction is the complete removal of a tooth from your mouth. This means loss of the tooth, but also the source of the infection which is causing any pain..
             </Card.Text>
           </Card.Body>
           <Button variant="success" as={Link} to="/checkout">
@@ -190,9 +182,7 @@ const Home = () => {
             </Card.Title>
             <Card.Text className="fs-4">Fee: $150</Card.Text>
             <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
+            Partial dentures are used when one or more natural teeth remain in the upper or lower jaw. A fixed (permanent) bridge replaces one or more teeth by placing crowns on the teeth on either side of the space and attaching artificial teeth to them. This “bridge” is then cemented into place.
             </Card.Text>
           </Card.Body>
           <Button variant="success" as={Link} to="/checkout">
@@ -207,9 +197,7 @@ const Home = () => {
             </Card.Title>
             <Card.Text className="fs-4">Fee: $1200</Card.Text>
             <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
+            Cosmetic dentistry is generally used to refer to any dental work that improves the appearance (though not necessarily the functionality) of teeth, gums and/or bite. It primarily focuses on improvement in dental aesthetics in color, position, shape, size, alignment and overall smile appearance.
             </Card.Text>
           </Card.Body>
           <Button variant="success" as={Link} to="/checkout">

@@ -20,17 +20,20 @@ const Register = () => {
   const [signInWithGoogle, googleuser] = useSignInWithGoogle(auth);
   const [signInWithFacebook, fbuser] = useSignInWithFacebook(auth);
   const [signInWithGithub, gituser] = useSignInWithGithub(auth);
-  const [createUserWithEmailAndPassword] =
-    useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
+  const [createUserWithEmailAndPassword, newuser,
+    newloading,
+    newerror,] =
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+  console.log(newuser, newloading, newerror);
   const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
-  if (googleuser ||fbuser || gituser ||user) {
+  if (googleuser || fbuser || gituser || user || newuser) {
     navigate("/")
   }
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast('Verification mail sent')
+    // toast('Verification mail sent');
     createUserWithEmailAndPassword(email, password);
   };
   return (
@@ -70,6 +73,7 @@ const Register = () => {
               required
             />
           </Form.Group>
+          <p className="text-danger">{newerror? newerror.message :''}</p>
           <Button
             className="w-100"
             variant="primary"
