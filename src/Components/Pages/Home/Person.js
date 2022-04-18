@@ -5,7 +5,7 @@ import "./Person.css";
 const Person = () => {
   return (
       <div>
-          <h1 className="w-25 mx-auto text-center mt-5 mb-5 text-info">About me <hr /></h1>
+          <h1 className="w-50 mx-auto text-center mt-5 mb-5 text-info">About me <hr /></h1>
       <div className="d-md-flex text-center align-items-center justify-content-around mb-5">
         <div className="cstm-width">
           <img className="me-md-3" src={image} alt="" />

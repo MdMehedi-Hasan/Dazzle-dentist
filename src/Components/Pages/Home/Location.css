@@ -1,0 +1,17 @@
+@media screen and (min-width:769px) {
+    .cstm-location{
+        display: flex;
+        justify-content: space-around;
+    }
+    .cstm-location iframe{
+        width: 50%;
+    }
+    .cstm-location-form{
+        width: 30%;
+    }
+}
+@media screen and (max-width:768px) {
+    .cstm-location iframe{
+        width: 100%;
+    }
+}
